@@ -13,6 +13,7 @@ public class Product
     public string Brand { get; set; }
     [Required]
     public int CategoryId { get; set; }
+    public Category Category { get; set; }
 
     public ICollection<OrderProduct> OrderProducts { get; set; }
 }
