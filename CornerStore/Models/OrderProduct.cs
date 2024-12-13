@@ -11,6 +11,8 @@ public class OrderProduct
     [Required]
     public int Quantity { get; set; }
 
-    public Order Order { get; set; }  // Reference to Order
+    public Order Order { get; set; }
     public Product Product { get; set; }
+
+    public Category Category { get; set; }
 }
